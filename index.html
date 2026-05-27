@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bella Pizza - Pizzaria</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h3>Bella Pizza</h3>
+        </div>
+        <ul>
+          <li><a href="#cardápio">Cardápio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div
+        class="alert alert-warning alert-dismissible fade show text-center m-0"
+        role="alert"
+      >
+        <strong>PROMOÇÃO RELÂMPAGO!</strong> Compre 6 pizzas e pague somente por
+        4 pizzas!
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="hero">
+        <div class="hero-overlay">
+          <img
+            src="imgs/ChatGPT Image 19 de mai. de 2026, 18_31_07.png"
+            alt=""
+          />
+          <div class="hero-inside">
+            <h1>Promoção: Compre duas pizzas e leve a terceira de graça!</h1>
+            <h3>Peça Agora!</h3>
+            <button type="button" class="btn btn-primary">Eu Quero!</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="cardápio" class="cardápio-container">
+        <div class="container">
+          <div class="inside-container">
+            <div class="card-cardapio">
+              <div class="img">
+                <img
+                  src="./imgs/pizza-de-pepperoni-caseira-portal-minha-receita.webp"
+                  alt="Pizza Pepperoni"
+                />
+              </div>
+              <h4>Pepperoni</h4>
+              <p>
+                Descrição: Pizza com molho de tomate, mussarela e pepperoni.
+              </p>
+            </div>
+            <div class="card-cardapio">
+              <div class="img">
+                <img
+                  src="./imgs/pizza-margherita-receita.avif"
+                  alt="Pizza Margherita"
+                />
+              </div>
+              <h4>Margherita</h4>
+              <p>
+                Descrição: Pizza com molho de tomate, mussarela e manjericão.
+              </p>
+            </div>
+          </div>
+          <div class="inside-container">
+            <div class="card-cardapio">
+              <div class="img">
+                <img
+                  src="./imgs/pizza_calabresa_e_mussarela_4389_orig.jpg"
+                  alt="Pizza Calabresa"
+                />
+              </div>
+              <h4>Calabresa</h4>
+              <p>
+                Descrição: Pizza com molho de tomate, mussarela e calabresa.
+              </p>
+            </div>
+            <div class="card-cardapio">
+              <div class="img">
+                <img
+                  src="./imgs/pizza-de-frango-com-catupiry.avif"
+                  alt="Pizza Frango Catupiry"
+                />
+              </div>
+              <h4>Frango Catupiry</h4>
+              <p>
+                Descrição: Pizza com molho de tomate, mussarela e frango
+                desfiado com catupiry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside id="sobre">
+      <div class="container-about">
+        <div class="img-section">
+          <img src="imgs/images (2).jpg" alt="Sobre Nós" />
+        </div>
+        <div class="about">
+          <h3><strong>Sobre Nós</strong></h3>
+          <p>
+            Somos uma pizzaria especializada em oferecer as melhores pizzas da
+            região. Nossa missão é satisfazer os clientes com sabores incríveis
+            e atendimento de qualidade.
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <section id="contato" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center g-4">
+          <!-- FORMULÁRIO -->
+          <div class="col-md-5">
+            <div class="card shadow p-4 h-100">
+              <h2 class="text-center mb-4">Entre em Contato</h2>
+
+              <form>
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Digite seu email"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+
+                  <textarea
+                    class="form-control"
+                    id="mensagem"
+                    rows="5"
+                    placeholder="Digite sua mensagem"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="button"
+                  class="btn btn-danger w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSucesso"
+                >
+                  Enviar Formulário
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- CARD DE CONTATO -->
+          <div class="col-md-5">
+            <div class="card shadow p-4 h-100">
+              <h2 class="text-center mb-4">Informações</h2>
+
+              <div class="mb-4">
+                <h5>📍 Endereço</h5>
+                <p>
+                  Rua das Pizzas, 123 <br />
+                  Centro - São Paulo/SP
+                </p>
+              </div>
+
+              <div class="mb-4">
+                <h5>📞 Telefone</h5>
+                <p>(11) 99999-9999</p>
+              </div>
+
+              <div class="mb-4">
+                <h5>📧 Email</h5>
+                <p>contato@bellapizza.com</p>
+              </div>
+
+              <div>
+                <h5>🕒 Horário</h5>
+                <p>
+                  Segunda a Domingo <br />
+                  18:00 às 00:00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="modalSucesso" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog" style="margin-top: 60px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Formulário Enviado</h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">Seu formulário foi enviado com sucesso!</div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <p>&copy; 2026 Bella Pizza. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
